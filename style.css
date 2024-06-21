@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Major+Mono+Display&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: black;
+}
+.container{
+  width: 400px;
+  height: min-content;
+  background-color: white;
+  border-radius: 12px;
+  padding: 28px;
+}
+.search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: min-content;
+}
+.search input{
+  font-size: 20px;
+  width: 90%;
+  text-transform: capitalize;
+  color: black;
+  background-color: rgb(189, 225, 239);
+  padding: 12px 16px;
+  border-radius: 14px;
+  
+}
+.search input::placeholder{
+  color: black;
+}
+.search button{
+  border: none;
+  background: transparent;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.search button:hover{
+
+  font-size: 18px;
+  transition: 100ms;
+}
+.weatherbody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+  
+}
+.weatherbody img{
+  width: 60%;
+  padding: 20px 20px;
+}
+.weatherbody .temp{
+  font-weight: 600;
+  font-size: 25px;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.humidity{
+  display: flex;
+}
+.humidity i{
+  padding: 10px;
+  font-size: 30px;
+
+}
+.windspeed{
+  display: flex;
+}
+.windspeed i{
+  padding: 14px;
+  font-size: 30px;
+}
